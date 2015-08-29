@@ -1,0 +1,5 @@
+date_published,cve_id,cvss_score,gained_access_level,access,complexity,authentication,confidentiality,integrity,availability
+2005-12-31,CVE-2005-4849,5.0,none,remote,low,not required,partial,none,none
+2007-07-05,CVE-2006-7217,4.0,none,remote,low,single system,none,partial,none
+2007-07-05,CVE-2006-7216,4.0,none,remote,low,single system,none,none,partial
+2010-08-16,CVE-2009-4269,2.1,none,local,low,not required,partial,none,none

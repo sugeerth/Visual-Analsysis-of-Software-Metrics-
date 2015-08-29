@@ -1,0 +1,75 @@
+========================
+= Queries to get bugs: =
+========================
+
+\copy (select distinct bl.git_log_id as fixing_git_log_id, bl.fixing_date, bl.intro_date, bl.file_name_map_id as file_name_id, bl.buggy_committer, bl.fixing_committer from derby.met_fc_buggy_lines bl order by bl.git_log_id) to './derby_bug_data.csv' csv header delimiter ',';
+
+
+select distinct bl.git_log_id as fixing_git_log_id, bl.fixing_date, bl.intro_date, bl.file_name_map_id, bl.buggy_committer, bl.fixing_committer from derby.met_fc_buggy_lines bl order by bl.git_log_id
+
+
+
+
+select count(*) from (select bl.git_log_id, bl.fixing_date, bl.intro_date, bl.file_name_map_id, bl.buggy_committer, bl.fixing_committer from derby.met_fc_buggy_lines bl group by bl.git_log_id, bl.fixing_date, bl.intro_date, bl.file_name_map_id, bl.buggy_committer, bl.fixing_committer order by bl.git_log_id) as inq;
+
+select distinct bl.git_log_id, bl.fixing_date, bl.intro_date, bl.file_name_map_id, bl.buggy_committer, bl.fixing_committer from derby.met_fc_buggy_lines bl order by bl.git_log_id;
+
+
+==============================
+= Queries to get commit data =
+==============================
+
+select lhs.committer_contributor_id, lhs.committer_dt, fnm.id as file_name_id, fnm.file_name, rhs.add_count, rhs.del_count
+from camel.git_log lhs, camel.git_log_detail rhs, camel.file_name_map fnm
+where lhs.id = rhs.git_log_id and rhs.file_name_map_id = fnm.id and is_src = true;
+
+
+
+\copy (select rhs.git_log_id, lhs.committer_contributor_id, lhs.committer_dt, fnm.id as file_name_id, fnm.file_name, rhs.add_count, rhs.del_count, ufm.countlinecode, ufm.countlinecomment, ufm.countlinecodeexe, ufm.countdeclfunction, ufm.countdeclmethodpublic, ufm.countdeclmethodprivate, ufm.countdeclmethodall, ufm.maxinheritancetree, ufm.ratiocommenttocode, ufm.sumcyclomatic from lucene.git_log lhs, lucene.git_log_detail rhs, lucene.file_name_map fnm, lucene.und_file_metrics ufm where lhs.id = rhs.git_log_id and rhs.file_name_map_id = fnm.id and is_src = true and lhs.id = ufm.git_log_id and ufm.file_name_map_id = fnm.id)  to './lucene_git_log_data_wmetrics.csv' csv header delimiter ',';
+
+und_file_metrics: 
+
+countdeclmethodprivate
+countclasscoupled
+avglinecode
+countline
+maxcyclomatic
+countdeclmethoddefault
+avgessential
+countdeclclassvariable
+sumcyclomaticstrict
+avgcyclomatic
+avgline
+countdeclclassmethod
+avglinecomment
+avgcyclomaticmodified
+countdeclfunction
+countlinecomment
+countdeclclass
+countdeclmethod
+sumcyclomaticmodified
+countlinecodedecl
+countdeclmethodprotected
+countdeclinstancevariable
+countclassderived
+countdeclmethodall
+maxcyclomaticstrict
+countdeclmethodpublic
+countlinecodeexe
+sumcyclomatic
+sumessential
+countstmtdecl
+countlinecode
+maxinheritancetree
+percentlackofcohesion
+countstmtexe
+ratiocommenttocode
+countlineblank
+countstmt
+maxcyclomaticmodified
+countsemicolon
+avglineblank
+countdeclinstancemethod
+avgcyclomaticstrict
+countclassbase
+endmarker       

@@ -1,0 +1,14 @@
+date_published,cve_id,cvss_score,gained_access_level,access,complexity,authentication,confidentiality,integrity,availability
+2010-10-12,CVE-2010-3083,4.3,none,remote,medium,not required,none,none,partial
+2010-10-18,CVE-2009-5006,4.0,none,remote,low,single system,none,none,partial
+2010-10-18,CVE-2009-5005,5.0,none,remote,low,not required,none,none,partial
+2012-08-27,CVE-2012-3467,5.0,none,remote,low,not required,none,partial,none
+2012-09-28,CVE-2012-2145,5.0,none,remote,low,not required,none,none,partial
+2012-05-03,CVE-2011-3620,7.5,none,remote,low,not required,partial,partial,partial
+2013-08-23,CVE-2013-1909,5.8,none,remote,medium,not required,partial,partial,none
+2013-03-13,CVE-2012-4460,5.0,none,remote,low,not required,none,none,partial
+2013-03-13,CVE-2012-4459,5.0,none,remote,low,not required,none,none,partial
+2013-03-13,CVE-2012-4458,5.0,none,remote,low,not required,none,none,partial
+2013-03-13,CVE-2012-4446,6.8,none,remote,medium,not required,partial,partial,partial
+2014-11-17,CVE-2014-3629,4.3,none,remote,medium,not required,partial,none,none
+2015-02-02,CVE-2015-0223,5.0,none,remote,low,not required,none,partial,none

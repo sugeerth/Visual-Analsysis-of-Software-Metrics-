@@ -1,0 +1,5 @@
+date_published,cve_id,cvss_score,gained_access_level,access,complexity,authentication,confidentiality,integrity,availability
+2012-07-12,CVE-2012-3376,7.5,none,remote,low,not required,partial,partial,partial
+2012-04-12,CVE-2012-1574,6.5,none,remote,low,single system,partial,partial,partial
+2014-12-05,CVE-2014-3627,5.0,none,remote,low,not required,partial,none,none
+2014-01-24,CVE-2013-2192,3.2,none,local network,high,not required,partial,partial,none

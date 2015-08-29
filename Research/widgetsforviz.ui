@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>371</width>
+     <height>821</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Controls</string>
+      </property>
+      <widget class="QWidget" name="OverviewDiagram" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>459</y>
+         <width>271</width>
+         <height>251</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>20</y>
+         <width>241</width>
+         <height>801</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="heatMap">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>190</y>
+         <width>151</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Author Contribution</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countdeclmethodall</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countdeclmethodprivate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countdeclmethodpublic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countdeclfunction</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countlinecodeexe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countlinecomment</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>countlinecode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ratiocommenttocode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>sumcyclomatic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CVE data vulnerabilities</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Release dat</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QRadioButton" name="apacheRepo">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apache Repo</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="githubRepo">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>102</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Github Repo</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="OverviewWidget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>390</y>
+         <width>231</width>
+         <height>241</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Repository:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heatmap:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="Bugdata">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>270</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Bug Data Visualization </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bug Data Visualization:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
